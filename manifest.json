@@ -1,0 +1,22 @@
+{
+  "name": "0wim",
+  "description": "Redirect imgur to 0imgur",
+  "version": "0.1",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "background": {"scripts":["background.js"]},
+  "permissions": [
+    "webRequest",
+    "*://imgur.com/*",
+    "*://i.imgur.com/*",
+    "webRequestBlocking"
+  ],
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  }
+}
