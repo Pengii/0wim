@@ -3,7 +3,14 @@ var hostImg = "https://i.0imgur.com";
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
 
-        // Fix the condition
+        // If the extension isn't enabled don't cancel or redirect
+        if (!enabled) {
+            return {
+                cancel: false
+            };
+        }
+
+        // Imgur hosts images either in i.imgur or imgur directly
         if (details.url.match(/https:\/\/i.imgur.com\/(?:.*)/)) {
             return {
                 redirectUrl: hostImg + details.url.match(/^https?:\/\/[^\/]+([\S\s]*)/)[1]
