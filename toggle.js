@@ -6,6 +6,12 @@ window.onload = function () {
     document.getElementById('toggle-button').onclick = function () {
         var background = chrome.extension.getBackgroundPage();
         background.enabled = !background.enabled;
+        document.getElementById('on-off').innerHTML = function () {
+            if (background.enabled) {
+                return "On";
+            }
+            return "Off";
+        };
         updateLabel();
     };
     updateLabel();
