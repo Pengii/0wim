@@ -1,8 +1,8 @@
 # 0wim
 
-Bu eklenti "imgur" içeren sorguları 0imgur uzantısına yönlendiriyor. "i.imgur" içeren sorguları ise i.0imgur uzantısına yönlendiriyor.
+Bu eklenti "imgur" içeren sorguları 0imgur uzantısına yönlendiriyor. "i.imgur" içeren sorguları ise "i.0imgur" uzantısına yönlendiriyor.
 
-# Kurulum ( Install )
+# Kurulum
 
 1. Dosyaları indirin 
 2. Chrome'da chrome://extensions/ adresine gidin
